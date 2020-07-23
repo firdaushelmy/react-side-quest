@@ -1,9 +1,9 @@
-var numbers = [3, 56, 2, 48, 5];
+import emojipedia from './emojipedia'
 
-//FindIndex - find the index of the first item that matches.
-
-let findIndexNumber = numbers.findIndex(function (num) {
-  return num > 10
+const newEmojipedia = emojipedia.map(function (emojiMeaning) {
+  return (
+    emojiMeaning.meaning.substring(0, 100)
+  )
 })
 
-console.log(findIndexNumber)
+console.log(newEmojipedia)
