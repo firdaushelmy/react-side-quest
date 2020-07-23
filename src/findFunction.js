@@ -7,5 +7,3 @@ let findNumber = numbers.find(function (num) {
 })
 
 console.log(findNumber)
-
-//FindIndex - find the index of the first item that matches.
