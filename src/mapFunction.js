@@ -4,10 +4,7 @@ var numbers = [3, 56, 2, 48, 5];
 
 //Method 1 - Map style
 
-function double(x) {
-  return x * 2
-}
-const newNumbers = numbers.map(double)
+const newNumbers = numbers.map(x => x * 2)
 
 console.log(newNumbers)
 
@@ -18,10 +15,6 @@ console.log(newNumbers)
 
 let feNewNumbers = []
 
-function feDouble(x) {
-  feNewNumbers.push(x * 2)
-}
-
-numbers.forEach(feDouble)
+numbers.forEach(x => feNewNumbers.push(x * 2))
 
 console.log(feNewNumbers)

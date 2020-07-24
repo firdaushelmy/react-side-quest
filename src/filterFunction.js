@@ -3,9 +3,9 @@ var numbers = [3, 56, 2, 48, 5];
 //Filter - Create a new array by keeping the items that return true.
 
 //Method 1 - filter style
-const newNumbers = numbers.filter(function (num) {
-  return num < 10
-})
+const newNumbers = numbers.filter(num =>
+  num < 10
+)
 
 console.log(newNumbers)
 
@@ -16,7 +16,7 @@ console.log(newNumbers)
 
 const feNewNumbers = []
 
-numbers.forEach(function (num) {
+numbers.forEach(num => {
   if (num < 10) {
     feNewNumbers.push(num)
   }

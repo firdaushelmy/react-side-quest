@@ -1,13 +1,7 @@
 import emojipedia from './emojipedia';
 
-// another method for the emojipedia map function in index.js
+// another method for the emojipedia map function in index.
 
-function meaningOnly(x) {
-  return (
-    x.meaning
-  )
-}
-
-const meaningTrunk = emojipedia.map(meaningOnly)
+const meaningTrunk = emojipedia.map(x => x.meaning)
 
 console.log(meaningTrunk)
